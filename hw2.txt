@@ -1,0 +1,38 @@
+HW2
+
+Problem 1.
+   a) There is a clean working directory and README.md is Tracked but Unmodifed
+   b) README.md is Modified and contains changes that haven't been staged for commit.
+      fun_problem.txt is Untracked and hasn't been staged for commit
+   c) Changes in README and fun_problem are Staged for commit
+   d) README and fun_problem are Modified and contain changes that haven't been staged for commit.
+   e) Changes in README are Staged for commit and fun_problem is Tracked but Unmodifed.
+      fun_problem is empty since "git checkout" discards changes in working directory.
+   f) README.md is Modified and contains changes that haven't been staged for commit and also still
+      has changes that are Staged for commit.
+Problem 2.
+   a) TAB
+   b) g++ -I. -std=c++11 -ggdb shape1.o shape.o -o shape1 -lm
+      rm -f shape.o shape1.o shape2.o *~ shape1 shape2 *~
+   c) .PHONY is used to avoid potential file name conflicts with commands. In the example shown, ".PHONY clean" ensures that
+      "make clean" runs the clean command as it is specified in the Makefile even if another file named "clean" is created in
+      the same directory
+   d) 2 and 4 are acceptable answers
+Problem 3.
+   1) See q3.pdf
+Problem 4.
+   1) A Queue of recipe step nodes each with a string to store a given step. Since Queues are is First In First Out, 
+   it would be easy to add steps to and dequeue steps as they are completed from the front of the Queue.
+
+   2) A Set of strings would be the best for this case as sets ensure that there can be no duplicate keys, thus ensuring
+   that all TV station IDs would be unique.
+
+   3) A Map of players with a string key as the player name and string value as team name. This would allow for quickly being able 
+   to find players by key and checking their value to see what team they are playing on.
+
+   4) A map of file extensions with the string key as the extension name and a Set value for storing the programs that can open it.
+   This would allow for quickly being able to lookup file extensions and add to their Set of programs while ensuring that
+   duplicate programs are not also added.
+Problem 5.
+   1) See q5.pdf
+   
